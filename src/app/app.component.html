@@ -1,0 +1,25 @@
+<section>
+ 
+  <nav>
+      
+      <h2 id="menu">Menu &#9776;</h2>
+          <ul>
+              <li><h2>Angular 4 Boilerplate</h2></li>
+            <!-- routes for the components-->
+              <li><a [routerLinkActiveOptions]="{ exact: true }" routerLink="/" routerLinkActive ="active">Home</a></li>
+              <li><a [routerLinkActiveOptions]="{ exact: true }" routerLink="/users" routerLinkActive ="active">Users</a></li>
+            <!-- routes for the components-->
+          </ul>
+  
+  
+        </nav>
+        <header>  
+          <h1>Angular 4 Boilerplate</h1>
+         </header>
+  <div class="container">
+   <router-outlet></router-outlet>
+  </div>
+
+
+
+</section>

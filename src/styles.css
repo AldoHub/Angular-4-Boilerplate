@@ -1,0 +1,173 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: #111;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: "Acme", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#menu {
+    display: none;
+}
+
+header h1 {
+    font-family: "Kaushan Script";
+    font-size: 50px;
+    margin: 0;
+    line-height: 54px;
+   
+}
+
+
+
+nav, nav ul{
+    padding: 0px;
+    margin:0px;
+    background: #222;
+}
+
+nav ul{
+list-style: none;
+text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li h2 {
+    padding: 0;
+    margin: 0;
+    text-indent: 10px;
+    color: #111;
+}
+
+nav ul li a{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+}
+
+
+nav ul li a:hover {
+    background: #FF950C;
+    color: #111;
+}
+
+.active {
+    background: #BF6C01;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.container {
+  width: 99%;
+  padding-top: 30px;
+  margin: 0 auto;
+ 
+}
+
+
+.home {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    border-top:1px solid #222;
+}
+
+.profile-img {
+    border-radius: 100%;
+  
+}
+
+.users {
+   border-top:1px solid #222;
+   column-count: 3;
+   text-align: center;
+   width: 80%;
+   padding-top: 10px;
+   margin: 0 auto; 
+}
+
+.user {
+  width: 100%;
+  background: #222;
+  border-radius:10px;
+  color: aliceblue;
+  padding: 10px 0;
+  display: inline-table;
+  word-break: break-all;
+margin: 10px 0;
+}
+
+.personal * {
+padding: 0;
+margin: 0;
+}
+
+.personal h2{
+    font-size: 30px;
+}
+
+@media (min-width:501px) and (max-width:750px){
+    .users {
+        column-count: 2;
+        
+    }
+}
+
+
+@media (min-width:0px) and (max-width:500px){
+
+nav {
+    margin-bottom: 10px;
+    background: none;
+    
+    text-align: center;
+}
+
+#menu {
+     display: block;
+    padding: 10px 0;
+    background: #111;
+    margin: 0;
+    cursor: pointer;
+     border-bottom:1px solid #222;
+    
+}
+
+
+
+   nav ul li{
+   background: #222;
+   display: block;
+   
+   text-align: center;
+   margin-bottom: 0px;
+   border-bottom: 1px solid #111;
+  
+    }
+
+    nav ul li a{
+        color: #FF950C;
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .users {
+        column-count: 1;
+        padding: 0;
+        column-gap: 0;
+    }
+    .user {
+        width: 100%;
+      
+    }
+}

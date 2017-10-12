@@ -1,0 +1,20 @@
+<section class="users-container">
+    
+    <div class="users">
+
+      <div class="user" *ngFor="let user of users">
+        <img class="profile-img" src="{{user.picture.large}}" />
+        <div class="personal">
+          
+          <h2>{{user.name.first}}</h2>
+            <h3>{{user.name.last}}</h3>
+          <p>{{user.login.username}}</p>
+          <p>{{user.email}}</p>
+          <p>{{user.cell}}</p>
+          
+        </div>
+        
+      </div>
+
+    </div>    
+</section>

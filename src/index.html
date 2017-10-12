@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular4Boilerplate</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Kaushan+Script" rel="stylesheet">
+</head>
+<body>
+  
+  <app-root>Loading...</app-root>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script>
+  $(function(){
+    //manage the menu on mobile size screens
+    $("#menu").on("click", ()=>{
+      $("#menu").next("UL").slideToggle();
+
+    });
+
+   
+   
+      if(window.innerWidth < 500){
+     
+        $("#menu").next("UL").slideUp();
+      }
+    
+
+
+    $(window).on("resize", ()=>{
+      if(window.innerWidth < 500){
+        $("#menu").next("UL").slideUp();
+      }else{
+        $("#menu").next("UL").slideDown();
+
+      }
+    }); 
+    
+ 
+
+
+  });
+  </script>
+
+</body>
+
+
+
+
+</html>
